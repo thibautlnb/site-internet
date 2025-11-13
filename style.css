@@ -36,7 +36,7 @@ a {
   text-decoration: none;
 }
 
-button {
+button.nav {
   z-index: 1;
   position: relative;
   font-size: inherit;
@@ -51,7 +51,7 @@ button {
   margin: 5px; 
 }
 
-button::before {
+button.nav::before {
   content: '';
   z-index: -1;
   position: absolute;
@@ -66,12 +66,12 @@ button::before {
   transition: transform 0.45s ease-in-out;
 }
 
-button:hover {
+button.nav:hover {
   cursor: pointer;
   color: #161616;
 }
 
-button:hover::before {
+button.nav:hover::before {
   transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
 }
 
@@ -103,6 +103,21 @@ button:hover::before {
   font-size: 16px;
   color: #666666;
 }
+.section img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+  transition: transform 0.3s ease; 
+}
+div.section{
+  background-color: blanchedalmond;
+}
+
+.section img:hover {
+  transform: scale(1.1); 
+}
+
 
 @media (max-width: 768px) {
   .section {
