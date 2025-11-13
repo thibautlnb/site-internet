@@ -1,0 +1,37 @@
+body {
+  background: linear-gradient(300deg ,rgb(0, 0, 0) , red );
+  height: 100vh;
+}
+
+header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.795);
+  margin: 2%;
+  padding: 0 120px;
+  border-radius: 30px;
+}
+
+h1 {
+  margin: 10px;
+}
+
+li {
+  display: flex;
+  color: white;
+}
+
+nav {
+  padding: 1.5%;
+  display: flex;
+  justify-content: space-between;
+  width: auto; 
+  flex-wrap: wrap; 
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
