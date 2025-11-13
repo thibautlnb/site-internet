@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(300deg ,rgb(0, 0, 0) , red );
+    height: 100vh;
+  }
+  
+  header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.795);
+    margin: 2%;
+    padding: 0 120px;
+    border-radius: 30px;
+  }
+  
+  h1 {
+    margin: 10px;
+  }
+  
+  li {
+    display: flex;
+    color: white;
+  }
+  
+  nav {
+    padding: 1.5%;
+    display: flex;
+    justify-content: space-between;
+    width: auto; 
+    flex-wrap: wrap; 
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  button.nav {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(0, 7%, 14%);
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    margin: 5px; 
+  }
+  
+  button.nav::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #940b0b;
+    transform-origin: center;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+  }
+  
+  button.nav:hover {
+    cursor: pointer;
+    color: #161616;
+  }
+  
+  button.nav:hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+  }
+  
