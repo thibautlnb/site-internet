@@ -1,6 +1,9 @@
 body {
-    background: linear-gradient(300deg ,rgb(0, 0, 0) , red );
-    height: 100vh;
+    background: linear-gradient(300deg ,rgb(0, 0, 0) , rgb(25, 73, 230) );
+    height: 170vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
   }
   
   header {
@@ -15,14 +18,45 @@ body {
   }
   
   h1 {
-    margin: 10px;
+    margin: 0;
+    font-size: 2rem;
   }
-  
+  main {
+    padding: 20px 40px;
+  }
+
   li {
     display: flex;
     color: white;
   }
-  
+  .intro, 
+.training-section {
+    display: flex;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 204, 255, 0.3);
+}
+.intro h2,
+.training-section h2 {
+    margin-top: 0;
+    color: #ffb3b3;
+}
+
+.training-section img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    display: block;
+    margin: 15px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+p {
+    line-height: 1.6;
+    color: #e5e5e5;
+}
   nav {
     padding: 1.5%;
     display: flex;
