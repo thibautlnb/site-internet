@@ -1,6 +1,6 @@
 body {
     background: linear-gradient(300deg ,rgb(0, 0, 0) , rgb(38, 100, 2) );
-    height: 100vh;
+    height: cover;
   }
   
   header {
