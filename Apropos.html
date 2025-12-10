@@ -1,102 +1,146 @@
+<!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos</title>
     <link rel="stylesheet" href="./css/apropos.css">
 </head>
+
 <body>
     <header>
         <h1>À propos de Moi</h1>
         <nav>
-        <button class="nav"> <li><a href="./index.html">Acceuil</a></li></button>
+           <button class="nav"> <li><a href="index.html">Acceuil</a></li></button>
         <button class="nav"><li><a href="pratique.html">Pratique</a></li></button>
         <button class="nav"><li><a href="materiel.html">Matériel</a></li></button>
         <button class="nav"><li><a href="nutrition.html">Nutrition</a></li></button>
         <button class="nav"><li><a href="Apropos.html">A propos</a></li></button>
         </nav>
     </header>
+
     <main>
         <section class="section">
-            <img src="" alt="Photo de profil">
+            <img src="" alt="Photo de profil" style="background-color: #333;">
             <div class="text">
                 <h2>Qui suis-je ?</h2>
-                <p>Je m'appelle Thibaut, je fais de la musculation depuis 2 ans et voici mon "carnet d'entrainement", 
-                    j'ai pu faire divert type d'entrainement mais actuellement je travail en bodybuilding.</p>
+                <p>Je m'appelle Thibaut, je fais de la musculation depuis 2 ans et voici mon "carnet d'entrainement",
+                   j'ai pu faire divers types d'entrainement mais actuellement je travaille en bodybuilding.</p>
             </div>
         </section>
-        <div class="training-container">
-    
-            <h2 class="training-title">Mon Programme d’Entraînement</h2>
-            <p class="training-desc">
-            Voici mon programme actuel basé sur la méthode 
-                <strong>Push / Pull / Legs</strong>.
-            </p>
-            <section class="training-section">
-                <h3>Jour Push</h3>
-                <img src="" alt="Push">
-                <p>Push en français veut dire pousser donc c'est pour ça que dans cette séance j'entraine les muscle du haut du corp qui permet de pousser.</p>
-                <ul>
-                    <li>4 série de 12 répétition a 50 kg -Développé couché</li>
-                    <li>4 série de 12 répétition de 9 kilo ( aux haltères ) -Elévation latérale. </li>
-                    <li>4 série de 12 répétition a 40 kg - développé couché incliné </li>
-                    <li>4 série de 10 répétition a 28 kg -extension triceps</li>
-                    <li>3 série de  2 minute de gainage </li>
 
-                </ul>
-            </section>
-            <section class="training-section">
-                <h3>Jour Pull</h3>
-                <img src="" alt="Pull">
-                <p>Pull en français veut dire tirer donc c'est pour ça que dans cette séance j'entraine les muscle du haut du corp qui permet de tirer.</p>
-                <ul>
-                    <li>4 serie 9 répétition a 5kg -Tractions lester</li>
-                    <li>4 série de 10 répétition a 90 kg -Rowing a la poulie</li>
-                    <li>4 série de 12 répétition a 42 kg -face pull </li>
-                    <li>4 série de 12 répétition a 12 kg par haltère -Curl biceps incliné</li>
-                    <li>4 série de 12 répétition a 10 kg - banc a lombaire</li>
-                </ul>
-            </section>
-            <section class="training-section">
-                <h3>Jour Legs</h3>
-                <img src="" alt="Legs">
-                <p>Legs en français veut dire jambes donc c'est pour ça que dans cette séance j'entraine les muscle des jambes.</p>
-                <ul>
-                    <li>4 série de 10 répétion a 80 kg -Squat</li>
-                    <li>4 série de 10 répétition a 150 kg -Presse</li>
-                    <li>4 série de 12 répétition a 32 kg leg extension</li>
-                    <li>4 série de 10 répétition a 12 kg -Mollets debout</li>
-                    <li>4 série de 12 répétition a 32kg/36kg -legs abduction / adduction</li>
-                </ul>
-            </section>
-    
-        </div> 
+        <div class="css-carousel-container">
+            <h2 class="training-title">Mon Programme d’Entraînement</h2>
+            <p class="training-desc" style="margin-bottom: 20px;">
+                Voici mon programme actuel basé sur la méthode <strong>Push / Pull / Legs</strong>.
+            </p>
+            
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+
+            <div class="slides-inner">
+                <div class="inner-track">
+                    
+                    <div class="slide">
+                        <div class="training-card">
+                            <h3>Jour Push</h3>
+                            <img src="" alt="Push">
+                            <p>Push en français veut dire pousser donc c'est pour ça que dans cette séance j'entraine les muscles du haut du corps qui permettent de pousser.</p>
+                            <ul>
+                                <li>4 séries de 12 répétitions à 50 kg - Développé couché</li>
+                                <li>4 séries de 12 répétitions de 9 kg (aux haltères) - Élévation latérale</li>
+                                <li>4 séries de 12 répétitions à 40 kg - Développé couché incliné</li>
+                                <li>4 séries de 10 répétitions à 28 kg - Extension triceps</li>
+                                <li>3 séries de 2 minutes de gainage</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="training-card">
+                            <h3>Jour Pull</h3>
+                            <img src="" alt="Pull">
+                            <p>Pull en français veut dire tirer donc c'est pour ça que dans cette séance j'entraine les muscles du haut du corps qui permettent de tirer.</p>
+                            <ul>
+                                <li>4 séries de 9 répétitions à 5 kg - Tractions lestées</li>
+                                <li>4 séries de 10 répétitions à 90 kg - Rowing à la poulie</li>
+                                <li>4 séries de 12 répétitions à 42 kg - Face pull</li>
+                                <li>4 séries de 12 répétitions à 12 kg par haltère - Curl biceps incliné</li>
+                                <li>4 séries de 12 répétitions à 10 kg - Banc à lombaires</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="training-card">
+                            <h3>Jour Legs</h3>
+                            <img src="" alt="Legs">
+                            <p>Legs en français veut dire jambes donc c'est pour ça que dans cette séance j'entraine les muscles des jambes.</p>
+                            <ul>
+                                <li>4 séries de 10 répétitions à 80 kg - Squat</li>
+                                <li>4 séries de 10 répétitions à 150 kg - Presse</li>
+                                <li>4 séries de 12 répétitions à 32 kg - Leg extension</li>
+                                <li>4 séries de 10 répétitions à 12 kg - Mollets debout</li>
+                                <li>4 séries de 12 répétitions à 32kg/36kg - Legs abduction / adduction</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-arrows">
+                <div class="arrows-for-1">
+                    <label for="slide3" class="arrow-left">&#10094;</label>
+                    <label for="slide2" class="arrow-right">&#10095;</label>
+                </div>
+                <div class="arrows-for-2">
+                    <label for="slide1" class="arrow-left">&#10094;</label>
+                    <label for="slide3" class="arrow-right">&#10095;</label>
+                </div>
+                <div class="arrows-for-3">
+                    <label for="slide2" class="arrow-left">&#10094;</label>
+                    <label for="slide1" class="arrow-right">&#10095;</label>
+                </div>
+            </div>
+            
+            <div class="carousel-dots">
+                <label for="slide1" class="dot"></label>
+                <label for="slide2" class="dot"></label>
+                <label for="slide3" class="dot"></label>
+            </div>
+
+        </div>
         <section class="section">
-            <img src="" alt="Personal Records">
+            <img src="" alt="Personal Records" style="background-color: #333;">
             <div class="text">
                 <h2>Mes PR (Personal Records)</h2>
                 <p>Voici mes meilleures performances actuelles :</p>
-    
                 <ul>
-                    <li><strong>Développé couché : 85 </strong><li>
-                    <li><strong>Squat : 130 kg</strong> </li>
-                    <li><strong>Soulevé de terre : 100kg</strong></li>
-                    <li><strong>Tractions lestées : 15 kg</strong></li>
+                    <li><strong>Développé couché :</strong> 85 kg</li>
+                    <li><strong>Squat :</strong> 130 kg</li>
+                    <li><strong>Soulevé de terre :</strong> 100 kg</li>
+                    <li><strong>Tractions lestées :</strong> 15 kg</li>
                 </ul>
             </div>
         </section>
+        
         <section class="section">
-            <img src="" alt="Nutrition">
-            <div class="text">
+             <img src="" alt="Nutrition" style="background-color: #333;">
+             <div class="text">
                 <h2>Nutrition</h2>
-                <p>Comme nutrition j'essaie d'abbord d'avoir une alimentation équilibré ( éviter les sodas, le sucre ), 
-                    et en plus de cela je prends des compléments alimentaire comme de la protein qui permet d'atteindre mon tôt 
-                    de protein par jour plus facilement, mais aussi je prends de la créatine (la créatine est un compléments alimentaire qui permet 
-                    de régénéré plus facilement l'énergie pour plus d'information 
-                    <a href="https://conseilsport.decathlon.fr/nutrition-a-quoi-sert-la-creatine#20d8ec83-e10b-4165-a27e-dbbde1d18764"> cliquez ici</a>).</p>
+                <p>Comme nutrition j'essaie d'abord d'avoir une alimentation équilibrée (éviter les sodas, le sucre),
+                   et en plus de cela je prends des compléments alimentaires comme de la protéine qui permet d'atteindre
+                   mon taux de protéine par jour plus facilement, mais aussi je prends de la créatine (la créatine est un
+                   complément alimentaire qui permet de régénérer plus facilement l'énergie, pour plus d'information
+                   <a href="https://conseilsport.decathlon.fr/nutrition-a-quoi-sert-la-creatine#20d8ec83-e10b-4165-a27e-dbbde1d18764" target="_blank" style="color: cyan;">
+                       cliquez ici</a>).
+                </p>
             </div>
         </section>
+
     </main>
-</body>
 </body>
 </html>
