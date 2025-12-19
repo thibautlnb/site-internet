@@ -39,7 +39,7 @@ body {
     text-decoration: none;
   }
   
-  button.nav {
+  a.nav {
     z-index: 1;
     position: relative;
     font-size: inherit;
@@ -55,7 +55,7 @@ body {
     margin: 5px; 
   }
   
-  button.nav::before {
+  a.nav::before {
     content: '';
     z-index: -1;
     position: absolute;
@@ -70,12 +70,12 @@ body {
     transition: transform 0.45s ease-in-out;
   }
   
-  button.nav:hover {
+  a.nav:hover {
     cursor: pointer;
     color: #161616;
   }
   
-  button.nav:hover::before {
+  a.nav:hover::before {
     transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
   }
   main {
@@ -123,7 +123,6 @@ section img {
     display: block;
     margin: 15px auto;
     border-radius: 10px;
-    background: #ddd; 
 }
 footer{
   display: flex;
