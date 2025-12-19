@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(300deg, rgb(0, 0, 0), rgb(38, 100, 2));
+      min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -21,7 +22,10 @@ h1 {
     margin: 0;
     font-size: 32px;
 }
-
+ul{
+  display: flex;
+  flex-wrap: wrap;
+}
 li {
   display: flex;
   color: white;
@@ -136,6 +140,9 @@ footer{
   margin: 20px;
 }
 @media (max-width: 768px) {
-  header { flex-direction: column; text-align: center; padding: 20px; }
-  nav { justify-content: center; margin-top: 15px; }
+  header { flex-direction: column; 
+    text-align: center; 
+    padding: 20px; }
+  nav { justify-content: center; 
+    margin-top: 15px; }
 }

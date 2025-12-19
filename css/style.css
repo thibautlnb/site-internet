@@ -15,7 +15,10 @@ li {
   color: white;
   list-style: none;
 }
-
+ul{
+  display: flex;
+  flex-wrap: wrap;
+}
 header {
   color: white;
   display: flex;
@@ -140,10 +143,9 @@ footer h2 {
 }
 
 @media (max-width: 768px) {
-  header {
-    padding: 0%;
-  }
-
+  header { flex-direction: column; 
+    text-align: center; 
+    padding: 20px; }
   .section {
     flex-direction: column;
     text-align: center;
@@ -163,7 +165,7 @@ footer h2 {
     width: 100%;
   }
 
-  nav button {
+  nav ul {
     width: auto;
     font-size: 1.1rem;
     padding: 12px 20px;
