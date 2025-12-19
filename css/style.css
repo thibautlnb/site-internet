@@ -1,6 +1,19 @@
 body {
-  background: linear-gradient(300deg ,rgb(0, 0, 0) , red );
-  height: cover;
+  background: linear-gradient(300deg, rgb(0, 0, 0), red);
+  min-height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  display: flex;
+  color: white;
+  list-style: none;
 }
 
 header {
@@ -18,22 +31,12 @@ h1 {
   margin: 10px;
 }
 
-li {
-  display: flex;
-  color: white;
-}
-
 nav {
   padding: 1.5%;
   display: flex;
   justify-content: space-between;
-  width: auto; 
-  flex-wrap: wrap; 
-}
-
-a {
-  color: white;
-  text-decoration: none;
+  width: auto;
+  flex-wrap: wrap;
 }
 
 button.nav {
@@ -49,7 +52,7 @@ button.nav {
   background-color: hsl(0, 7%, 14%);
   overflow: hidden;
   transition: color 0.4s ease-in-out;
-  margin: 5px; 
+  margin: 5px;
 }
 
 button.nav::before {
@@ -82,50 +85,57 @@ button.nav:hover::before {
   justify-content: flex-start;
   margin: 20px;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: rgb(170, 18, 18);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  color: white;
+}
+
+
+.section>a,
+.section>img {
+  width: 300px;
+  min-width: 300px;
+  flex-shrink: 0;
+  margin-right: 30px;
+  display: block;
 }
 
 .section img {
-  max-width: 40%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
-  margin-right: 20px;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.section img:hover {
+  transform: scale(1.1);
+}
+
+.text {
+  flex: 1;
+  text-align: left;
 }
 
 .text h2 {
   font-size: 24px;
-  color: #000000;
+  color: black;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 
-.text p {
-  font-size: 16px;
-  color: #ffffffc4;
-}
-.section img {
-  max-width: 40%;
-  height: auto;
-  border-radius: 8px;
-  margin-right: 20px;
-  transition: transform 0.3s ease; 
-}
-div.section{
-  background-color: rgb(170, 18, 18);
-}
-
-.section img:hover {
-  transform: scale(1.1); 
-}
-footer{
+footer {
   display: flex;
   background-color: rgb(0, 0, 0);
   border-radius: 10px;
   opacity: 80%;
-  padding: 5px;
+  padding: 5px 40px;
+  margin: 20px;
 }
-footer h2{
+
+footer h2 {
   color: white;
 }
 
@@ -133,28 +143,29 @@ footer h2{
   header {
     padding: 0%;
   }
+
   .section {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .section img {
-      max-width: 80%;
-      margin-bottom: 15px;
+    max-width: 80%;
+    margin-bottom: 15px;
   }
 
   header h1 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   nav {
-      justify-content: space-evenly; 
-      width: 100%;
+    justify-content: space-evenly;
+    width: 100%;
   }
 
   nav button {
-      width: auto;
-      font-size: 1.1rem; 
-      padding: 12px 20px; 
+    width: auto;
+    font-size: 1.1rem;
+    padding: 12px 20px;
   }
 }
