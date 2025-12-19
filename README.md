@@ -48,7 +48,7 @@ Une section personnelle détaillant mon profil d'athlète :
 
 ---
 
-## 🛠️ Technologies Utilisées
+##  Technologies Utilisées
 
 * **HTML5 :** Structure des pages (`<header>`, `<main>`, `<section>`, `<footer>`).
 * **CSS3 :**
