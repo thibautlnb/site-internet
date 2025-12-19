@@ -25,10 +25,12 @@ h1 {
 main {
   padding: 20px 40px;
 }
-ul{
+
+ul {
   display: flex;
   flex-wrap: wrap;
 }
+
 li {
   display: flex;
   color: white;
@@ -132,12 +134,29 @@ footer {
   padding: 5px 40px;
   margin: 20px;
 }
-h3{ 
+
+h3 {
   color: white;
 }
+
 @media (max-width: 768px) {
-  header { flex-direction: column; padding: 20px; text-align: center; }
-  nav { justify-content: center; margin-top: 15px; }
-  .training-content { flex-direction: column; }
-  .training-section img { width: 100%; margin-bottom: 15px; }
+  header {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .training-content {
+    flex-direction: column;
+  }
+
+  .training-section img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }

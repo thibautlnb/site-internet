@@ -1,31 +1,33 @@
 body {
-    background: linear-gradient(300deg, rgb(0, 0, 0), rgb(38, 100, 2));
-      min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+  background: linear-gradient(300deg, rgb(0, 0, 0), rgb(38, 100, 2));
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 header {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.85);
-    margin: 20px;
-    padding: 15px 60px;
-    border-radius: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  margin: 20px;
+  padding: 15px 60px;
+  border-radius: 20px;
 }
 
 h1 {
-    margin: 0;
-    font-size: 32px;
+  margin: 0;
+  font-size: 32px;
 }
-ul{
+
+ul {
   display: flex;
   flex-wrap: wrap;
 }
+
 li {
   display: flex;
   color: white;
@@ -35,8 +37,8 @@ nav {
   padding: 1.5%;
   display: flex;
   justify-content: space-between;
-  width: auto; 
-  flex-wrap: wrap; 
+  width: auto;
+  flex-wrap: wrap;
 }
 
 a {
@@ -57,7 +59,7 @@ a.nav {
   background-color: hsl(0, 7%, 14%);
   overflow: hidden;
   transition: color 0.4s ease-in-out;
-  margin: 5px; 
+  margin: 5px;
 }
 
 a.nav::before {
@@ -85,64 +87,72 @@ a.nav:hover::before {
 }
 
 main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
 section {
-    background: rgba(0, 0, 0, 0.75);
-    padding: 30px;
-    margin: 30px 0;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(76, 255, 59, 0.3);
+  background: rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  margin: 30px 0;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(76, 255, 59, 0.3);
 }
 
 section h2 {
-    margin-bottom: 20px;
-    font-size: 26px;
-    text-align: center;
-    color: #9aff8a;
+  margin-bottom: 20px;
+  font-size: 26px;
+  text-align: center;
+  color: #9aff8a;
 }
 
 section img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    background: #ddd;
-    display: block;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  background: #ddd;
+  display: block;
 }
+
 .nutrition-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .nutrition-section img {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 ul {
-    margin-top: 10px;
-    padding-left: 20px;
+  margin-top: 10px;
+  padding-left: 20px;
 }
 
 ul li {
-    margin: 8px 0;
-    line-height: 1.6;
+  margin: 8px 0;
+  line-height: 1.6;
 }
-footer{
+
+footer {
   display: flex;
   background-color: rgb(0, 0, 0);
   border-radius: 10px;
   opacity: 80%;
-  padding:5px 40px;
+  padding: 5px 40px;
   margin: 20px;
 }
+
 @media (max-width: 768px) {
-  header { flex-direction: column; 
-    text-align: center; 
-    padding: 20px; }
-  nav { justify-content: center; 
-    margin-top: 15px; }
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  nav {
+    justify-content: center;
+    margin-top: 15px;
+  }
 }
